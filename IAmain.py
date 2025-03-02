@@ -5,10 +5,10 @@ import os
 from vosk import Model, KaldiRecognizer
 
 # Configura la clau d'API de OpenAI
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("sk-...SX4A")
 
 # Configura el model de reconeixement de veu Vosk
-model = Model("model")
+model = Model("/Users/esteve/raspiPY/vosk-model-small-es-0.42")  #path al model
 recognizer = KaldiRecognizer(model, 16000)
 
 
